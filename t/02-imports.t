@@ -9,7 +9,7 @@ my @FILES = make-temp-path :content("a\nb\n"    ),
             make-temp-path :content("g\nh\ni"   );
 
 is-run $*EXECUTABLE, :args[
-    '-Ilib', '-e', ｢
+    '-Ilib', |('-I' «~« $*REPO.repo-chain.map: *.path-spec), '-e', ｢
         use LN;
         for lines() {
             .say;
@@ -23,7 +23,7 @@ is-run $*EXECUTABLE, :args[
    'no args on use line';
 
 is-run $*EXECUTABLE, :args[
-    '-Ilib', '-e', ｢
+    '-Ilib', |('-I' «~« $*REPO.repo-chain.map: *.path-spec), '-e', ｢
         use LN 'no-reset';
         for lines() {
             .say;
@@ -37,7 +37,7 @@ is-run $*EXECUTABLE, :args[
    'reset on use line';
 
 is-run $*EXECUTABLE, :args[
-    '-Ilib', '-e', ｢
+    '-Ilib', |('-I' «~« $*REPO.repo-chain.map: *.path-spec), '-e', ｢
         use LN <resetdasdsa>;
     ｣, |@FILES
 ], :in("foo\nbar"), :err(/"Unknown option passed to LN module"/),

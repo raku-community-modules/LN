@@ -3,7 +3,7 @@ use Testo;
 
 plan 2;
 
-my \a = <-Ilib -MLN -e>;
+my \a = ('-Ilib', |('-I' «~« $*REPO.repo-chain.map: *.path-spec), |<-MLN -e>);
 
 group '.ln method' => 3 => {
     is-run $*EXECUTABLE, :args[|a, ｢print $*ARGFILES.ln｣],
