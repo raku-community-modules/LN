@@ -13,5 +13,5 @@ sub EXPORT (*@opts) {
     PROCESS::<$LN> := Proxy.new:
         :FETCH{ $*ARGFILES.ln }, :STORE(-> $, $ln { $*ARGFILES.ln = $ln });
 
-    Map.new: 'IO::CatHandle::AutoLines' => IO::CatHandle::AutoLines;
+    Map.new: 'IO::CatHandle::AutoLines' => IO::CatHandle::AutoLines
 }
