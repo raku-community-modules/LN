@@ -14,7 +14,7 @@ perl6 -MLN -ne 'say "$*LN:$_"'                  foo bar # Perl 6
 
 ```bash
 $ echo -e "a\nb\nc" > foo
-$ echo -e "d\ne" > bar
+$ echo -e "d\ne"    > bar
 
 $ perl6 -MLN -ne 'say "$*LN:$_"' foo bar
 1:a
