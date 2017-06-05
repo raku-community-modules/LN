@@ -8,7 +8,7 @@ LN - Get `$*ARGFILES` with line numbers via `$*LN`
 # SYNOPSIS
 
 ```bash
-perl -wlnE     'say "$.:$_"; close ARGV if eof' foo bar # Perl 5
+perl  -wlnE    'say "$.:$_"; close ARGV if eof' foo bar # Perl 5
 perl6 -MLN -ne 'say "$*LN:$_"'                  foo bar # Perl 6
 ```
 
