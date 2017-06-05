@@ -64,7 +64,7 @@ use LN 'no-reset';
 
 Exports [`IO::CatHandle::AutoLines`](https://github.com/zoffixznet/perl6-IO-CatHandle-AutoLines) role, for you to use, if needed.
 
-----
+-----
 
 #### REPOSITORY
 
