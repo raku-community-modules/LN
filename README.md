@@ -2,7 +2,7 @@
 
 # NAME
 
-NL - Get `$*ARGFILES` with line numbers via `$*LN`
+LN - Get `$*ARGFILES` with line numbers via `$*LN`
 
 
 # SYNOPSIS
