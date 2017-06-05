@@ -36,7 +36,10 @@ $ perl6 -ne 'use LN "no-reset"; say "$*LN:$_"' foo bar
 Mixes in
 [`IO::CatHandle::AutoLines`](https://github.com/zoffixznet/perl6-IO-CatHandle-AutoLines) into
 [`$*ARGFILES`](https://docs.perl6.org/language/variables#index-entry-%24%2AARGFILES)
-which
+which provides `.ln` method containing current line number of the current handle
+(or total line number if `'no-reset'` option was passed to `use`). For ease
+of access to that method `$*LN` dynamic variable containing its value is
+available.
 
 # EXPORTED TERMS
 
