@@ -9,7 +9,6 @@ sub EXPORT (*@opts) {
           ~ " {(try $*W.current_file) // '<unknown file>'}."
           ~ "Valid options are: " ~ %valid-opts.keys.join(", ");
 
-    $*ARGFILES;
     $*ARGFILES does IO::CatHandle::AutoLines[:reset(not %opts<no-reset>)];
     PROCESS::<$LN> := Proxy.new:
         :FETCH{ $*ARGFILES.ln }, :STORE(-> $, $ln { $*ARGFILES.ln = $ln });
