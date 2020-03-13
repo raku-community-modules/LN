@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/zoffixznet/perl6-LN.svg)](https://travis-ci.org/zoffixznet/perl6-LN)
+[![Build Status](https://travis-ci.org/raku-community-modules/perl6-LN.svg)](https://travis-ci.org/raku-community-modules/perl6-LN)
 
 # NAME
 
@@ -41,6 +41,9 @@ which provides `.ln` method containing current line number of the current handle
 of access to that method `$*LN` dynamic variable containing its value is
 available.
 
+It's been known to fail with versions like Raku 2020.01. Uset 2020.02
+at least for this.
+
 # EXPORTED TERMS
 
 # `$*LN`
@@ -69,16 +72,18 @@ Exports [`IO::CatHandle::AutoLines`](https://github.com/zoffixznet/perl6-IO-CatH
 #### REPOSITORY
 
 Fork this module on GitHub:
-https://github.com/zoffixznet/perl6-LN
+https://github.com/raku-community-modules/perl6-LN
 
 #### BUGS
 
 To report bugs or request features, please use
-https://github.com/zoffixznet/perl6-LN/issues
+https://github.com/raku-community-modules/perl6-LN/issues
 
 #### AUTHOR
 
 Zoffix Znet (http://perl6.party/)
+
+Currently maintained by the Raku community.
 
 #### LICENSE
 
