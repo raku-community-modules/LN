@@ -1,4 +1,4 @@
-use lib <lib>;
+use lib <lib>; # -*- perl6-mode 
 use Testo;
 use Temp::Path;
 
