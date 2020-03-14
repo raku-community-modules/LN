@@ -9,7 +9,7 @@ LN - Get `$*ARGFILES` with line numbers via `$*LN`
 
 ```bash
 perl  -wlnE    'say "$.:$_"; close ARGV if eof' foo bar # Perl 5
-perl6 -MLN -ne 'say "$*LN:$_"'                  foo bar # Perl 6
+perl6 -MLN -ne 'say "$*LN:$_"'                  foo bar # Raku
 ```
 
 ```bash
@@ -34,7 +34,7 @@ $ perl6 -ne 'use LN "no-reset"; say "$*LN:$_"' foo bar
 # DESCRIPTION
 
 Mixes in
-[`IO::CatHandle::AutoLines`](https://github.com/zoffixznet/perl6-IO-CatHandle-AutoLines) into
+[`IO::CatHandle::AutoLines`](https://github.com/raku-community-modules/perl6-IO-CatHandle-AutoLines) into
 [`$*ARGFILES`](https://docs.perl6.org/language/variables#index-entry-%24%2AARGFILES)
 which provides `.ln` method containing current line number of the current handle
 (or total line number if `'no-reset'` option was passed to `use`). For ease
@@ -48,9 +48,9 @@ at least for this.
 
 # `$*LN`
 
-Contains same value as [`$*ARGFILES.ln`](https://github.com/zoffixznet/perl6-IO-CatHandle-AutoLines#synopsis)
+Contains same value as [`$*ARGFILES.ln`](https://github.com/raku-community-modules/perl6-IO-CatHandle-AutoLines#synopsis)
 which is a method exported by
-[`IO::CatHandle::AutoLines`](https://github.com/zoffixznet/perl6-IO-CatHandle-AutoLines)
+[`IO::CatHandle::AutoLines`](https://github.com/raku-community-modules/perl6-IO-CatHandle-AutoLines)
 that gives the current line number of the handle.
 
 By default, the line number will get reset on each new file in `$*ARGFILES`.
@@ -65,7 +65,7 @@ use LN 'no-reset';
 
 ## role `IO::CatHandle::AutoLines`
 
-Exports [`IO::CatHandle::AutoLines`](https://github.com/zoffixznet/perl6-IO-CatHandle-AutoLines) role, for you to use, if needed.
+Exports [`IO::CatHandle::AutoLines`](https://github.com/raku-community-modules/perl6-IO-CatHandle-AutoLines) role, for you to use, if needed.
 
 -----
 
