@@ -17,5 +17,5 @@
         "LN" : "lib/LN.pm6"
     },
     "authors"       : ["Zoffix Znet","Elizabeth Mattijsen", "JJ Merelo"],
-    "support"       : {"source" : "https://github.com/raku-community-modules/perl6-LN.git"}
+    "support"       : {"source" : "https://github.com/raku-community-modules/LN.git"}
 }
