@@ -8,22 +8,22 @@ LN - Get `$*ARGFILES` with line numbers via `$*LN`
 # SYNOPSIS
 
 ```bash
-perl  -wlnE    'say "$.:$_"; close ARGV if eof' foo bar # Perl 5
-perl6 -MLN -ne 'say "$*LN:$_"'                  foo bar # Raku
+perl  -wlnE   'say "$.:$_"; close ARGV if eof' foo bar # Perl
+raku -MLN -ne 'say "$*LN:$_"'                  foo bar # Raku
 ```
 
 ```bash
 $ echo -e "a\nb\nc" > foo
 $ echo -e "d\ne"    > bar
 
-$ perl6 -MLN -ne 'say "$*LN:$_"' foo bar
+$ raku -MLN -ne 'say "$*LN:$_"' foo bar
 1:a
 2:b
 3:c
 1:d
 2:e
 
-$ perl6 -ne 'use LN "no-reset"; say "$*LN:$_"' foo bar
+$ raku -ne 'use LN "no-reset"; say "$*LN:$_"' foo bar
 1:a
 2:b
 3:c
@@ -41,7 +41,7 @@ which provides `.ln` method containing current line number of the current handle
 of access to that method `$*LN` dynamic variable containing its value is
 available.
 
-It's been known to fail with versions like Raku 2020.01. Uset 2020.02
+It's been known to fail with versions like Raku 2020.01. Use 2020.02
 at least for this.
 
 # EXPORTED TERMS
@@ -57,7 +57,7 @@ By default, the line number will get reset on each new file in `$*ARGFILES`.
 If you wish it to *not* reset, pass `"no-reset"` positional argument to the
 `use` line:
 
-```perl6
+```raku
 use LN 'no-reset';
 ```
 
@@ -72,12 +72,12 @@ Exports [`IO::CatHandle::AutoLines`](https://github.com/raku-community-modules/p
 #### REPOSITORY
 
 Fork this module on GitHub:
-https://github.com/raku-community-modules/perl6-LN
+https://github.com/raku-community-modules/LN
 
 #### BUGS
 
 To report bugs or request features, please use
-https://github.com/raku-community-modules/perl6-LN/issues
+https://github.com/raku-community-modules/LN/issues
 
 #### AUTHOR
 
