@@ -34,7 +34,7 @@ $ raku -ne 'use LN "no-reset"; say "$*LN:$_"' foo bar
 # DESCRIPTION
 
 Mixes in
-[`IO::CatHandle::AutoLines`](https://github.com/raku-community-modules/perl6-IO-CatHandle-AutoLines) into
+[`IO::CatHandle::AutoLines`](https://github.com/raku-community-modules/IO-CatHandle-AutoLines) into
 [`$*ARGFILES`](https://docs.perl6.org/language/variables#index-entry-%24%2AARGFILES)
 which provides `.ln` method containing current line number of the current handle
 (or total line number if `'no-reset'` option was passed to `use`). For ease
