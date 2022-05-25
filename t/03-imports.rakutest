@@ -1,4 +1,3 @@
-use lib <lib>; # -*- perl6-mode 
 use Testo;
 use Temp::Path;
 
@@ -21,3 +20,5 @@ is-run $*EXECUTABLE, :args[
     ｣, |@FILES
 ], :out("a\n1\nb\n2\nc\n1\nd\n2\ne\n3\nf\n4\ng\n1\nh\n2\ni\n3\n0\n0\n"),
    'no args on use line';
+
+# vim: expandtab shiftwidth=4

@@ -1,21 +1,34 @@
 {
-    "perl"         : "6.c",
-    "name"         : "LN",
-    "license"      : "Artistic-2.0",
-    "version"      : "1.001002",
-    "description"  : "Get $*ARGFILES with line numbers via $*LN",
-    "tags"         : [ "IO" ],
-    "depends"      : [
-        "IO::CatHandle::AutoLines:ver<1.001004+>"
-    ],
-    "test-depends" : [
-        "Testo",
-        "Temp::Path",
-        "Test::META"
-    ],
-    "provides"     : {
-        "LN" : "lib/LN.pm6"
-    },
-    "authors"       : ["Zoffix Znet","Elizabeth Mattijsen", "JJ Merelo"],
-    "support"       : {"source" : "https://github.com/raku-community-modules/LN.git"}
+  "auth": "zef:raku-community-modules",
+  "authors": [
+    "Zoffix Znet",
+    "Elizabeth Mattijsen",
+    "JJ Merelo"
+  ],
+  "build-depends": [
+  ],
+  "depends": [
+    "IO::CatHandle::AutoLines:ver<1.1+>"
+  ],
+  "description": "Get $*ARGFILES with line numbers via $*LN",
+  "license": "Artistic-2.0",
+  "name": "LN",
+  "perl": "6.c",
+  "provides": {
+    "LN": "lib/LN.rakumod"
+  },
+  "resources": [
+  ],
+  "source-url": "https://github.com/raku-community-modules/LN.git",
+  "support": {
+    "source": "https://github.com/raku-community-modules/LN.git"
+  },
+  "tags": [
+    "IO"
+  ],
+  "test-depends": [
+    "Testo",
+    "Temp::Path"
+  ],
+  "version": "1.1"
 }

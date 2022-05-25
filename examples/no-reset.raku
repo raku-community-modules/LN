@@ -1,5 +1,3 @@
-#!/usr/bin/env raku
-
 use LN 'no-reset';
 
 for lines() {
@@ -10,3 +8,4 @@ $*ARGFILES.ln.say;
 $*LN.say;
 IO::CatHandle.new does IO::CatHandle::AutoLines;
 
+# vim: expandtab shiftwidth=4

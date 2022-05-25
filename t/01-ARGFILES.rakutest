@@ -1,4 +1,3 @@
-use lib <lib>;
 use Testo;
 
 plan 2;
@@ -64,3 +63,5 @@ group '$*LN var' => 3 => {
           }
       ｣], :in("foo\nbar"), :out("foo\n1\nbar\n2\n0\n"), '.lines works';
 }
+
+# vim: expandtab shiftwidth=4
